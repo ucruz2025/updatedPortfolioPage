@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Port-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*All of portfolio font*/
+    --head-back: steelblue; /*All Header in body's background*/
+    --text-color: rgb(0, 4, 255);
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: slategray;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--Port-font);
+}
+
+h1{
+    font-size: 30px;
+    font-style: italic;
+    background-color: var(--head-back);
+    padding: 10px;
+    margin-left: 0;
+    color: var(--text-color)
+}
+
+nav{
+   font-size: 15px;
+   padding: 5px;
+}
+
+nav ul{
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+}
+
+a{
+    color: var(--text-color); /*Change color towards the end*/
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+section{
+    padding: 25px;
+    text-align: center;
+    font: var(--Port-font);
+}
+
+section div{
+    padding: 40px;
+}
+
+section p{
+    padding: 20px;
+    justify-content: space-between;
+}
+
+img{
+    height: 200px;
+}
+
+#past-work-experience{
+    justify-content: space-between;
+}
+
+#contact-me img{
+    height: 75px;
+}
+
+#contact-me a{
+    justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+}
+
+/*We can try out to do div instead of a class to make all sections within main to follow same format*/
+
+/*Could also maybe add aside for h2 titles??*/
+
+/*Make sure to add @media screen to correspond to different sizes*/
