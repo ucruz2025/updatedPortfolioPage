@@ -3,57 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potential Employee Portfolio Sample</title>
-    <link rel="stylesheet" href="./Assests/CSS/reset.css"/>
-    <link rel="stylesheet" href="Assests/CSS/style.css"/>
+    <title>Uriel Cruz Salgado Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assests/css/style.css"/>
 </head>
 
 <body>
    <header>
-       <h1>Uriel Cruz Salgado</h1>
-       <img src="./Assests/Images/830845636.jpg">
-       <nav>
-           <ul>
-               <li><a href="#about-me">About Me</a></li>
-               <li><a href="#past-work-experience">Past Work Experience</a></li>
-               <li><a href="#contact-me">Contact Me</a></li>
-           </ul>
-       </nav>
+       <div class="container">
+           <h1>Uriel Cruz Salgado</h1>
+            <div class="card border-info mb-3" >
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./assests/images/201030_Uriel Cruz-Salgado-25.JPEG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h4 class="card-title">Junior at Lehigh University and recent Web Development Coding Bootcamp Participant</h4>
+                    <p class="card-text">Have a look at some of my past projects on my Github: <a href="https://github.com/ucruz2025">Uriel's Github</a></p>
+                    <a type="button" class="btn btn-outline-info btn-sm" href="">Uriel Cruz Salgado's Resume</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+       </div>
    </header>
 
    <main>
-       <section>
-           <div id="about-me">
-                <h2>About Me</h2>
-                <p>Currently in a Coding Bootcamp learning the basics of Web Development!</p>
-                <p>The languages I'm currently learning are..</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Node.js</li>
-                    <li>Sequelize</li>
-                    <li>React</li>
-                </ul>
-                <p>Some interests and hobbies I have are reading books, going for hikes, cycling, rock climbing, watching sports, and CODING!!!</p>
-            </div>
+       <!--Projects-->
+       <section class="projects">
+           <h2>Past Projects</h2>
+           <h5>Click on Buttons to View Websites!<h5>
 
-            <div id="past-work-experience">
-                <h2>Past Work Experience</h2>
-                    <a href="https://github.com/ucruz2025/CodeRefractorForMarketingAgencyHW1">
-                        <img src="./Assests/Images/HW1Screenshot.png">
-                        <p>Code Refractor for Marketing Agency</p>
-                    </a>
-                    <a href="https://github.com/ucruz2025/MyPersonalPasswordGenerator">
-                        <img src="./Assests/Images/passwordScreenshot.png">
-                        <p>Password Generator</p>
-                    </a>
-                    <a href="https://github.com/ucruz2025/JavaScriptFundamentalsQuiz">
-                        <img src="./Assests/Images/quizScreenshot.png">
-                        <p>Javascript Quiz</p>
-                    </a>
+           <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card">
+                <img src="./assests/images/NASA_logo.png" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h3 class="card-title">NASA Quick Education Project</h3>
+                  <p class="card-text">A website that gives you some quick information about NASA's Image of the Day. Uses one of NASA's API's to gather this information.</p>
+                  <a type="button" class="btn btn-outline-secondary btn-sm" href="https://ucruz2025.github.io/Project-1-/">Into the Cosmos</a>
+                </div>
+              </div>
             </div>
-            
+            <div class="col">
+              <div class="card">
+                <img src="./assests/images/workdaySchedule.png" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h3 class="card-title">Work Day Schedule Website</h3>
+                  <p class="card-text">Need a simple planner for your work schedule? Here's a website that does just that!</p>
+                  <a type="button" class="btn btn-outline-primary btn-sm" href="https://ucruz2025.github.io/WorkDayScheduleList/">Work Day Schedule</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./assests/images/FitnessTracker.jpeg" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h3 class="card-title">Fitness Tracker App</h3>
+                  <p class="card-text">Tracks and displays all recorded workouts. Uses MongoDB and is deployed in Heroku</p>
+                  <a type="button" class="btn btn-outline-success btn-sm" href="https://friendly-eh-56333.herokuapp.com/">Fitness Tracker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+       <!--Professional and Education-->
+       <section class="professional">
+           
+            <h2>Education</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 ">
+                <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                    <h3 class="card-title">Lehigh University</h3>
+                    <p class="card-text">Bachelor's Degree in Computer Science and Philosophy</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                    <h3 class="card-title">University of Oregon</h3>
+                    <h5 class="card-subtitle">Trilogy Services</h5>
+                    <p class="card-text">Full Stack Web Development Coding Bootcamp</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+       </section>
+   </main>
+
+   <footer>
+       <!--Contact Info-->
+       <section class="contactInfo">
             <div id="contact-me">
                 <h2>Contact Me</h2>
                 <p>
@@ -66,16 +111,9 @@
                     <a href="https://ucruz2025@gmail.com">
                         <img src="./Assests/Images/gmailLogo.png">
                     </a>
-
                 </p>
             </div>
-
        </section>
-
-   </main>
-
-   <footer>
-       <p>Thank you for your time and consideration</p>
    </footer>
     
 </body>
